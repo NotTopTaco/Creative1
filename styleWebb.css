@@ -1,0 +1,11 @@
+#carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+.carousel-caption {
+    background: lightgray;
+    border-radius: 5%;
+    opacity: .5;
+}
