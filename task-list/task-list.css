@@ -132,7 +132,7 @@ h1 {
 }
 
 .task.has-due-date > .task-preview > .details-link > .task-data,
-.task.has-description > .task-preview > .task-data {
+.task.has-description > .task-preview > .details-link > .task-data {
   /* display */
   display: flex;
   flex-direction: row nowrap;
@@ -191,8 +191,10 @@ h1 {
   font-size: inherit;
 }
 
-.task:not(.has-description):not(.has-due-date):not(.has-reminder):not(.is-recurring)
-  .task-more {
+.task:not(.has-description):not(.has-due-date)
+  > .task-preview
+  > .details-link
+  > .task-more {
   display: inline-block;
   background: transparent;
   border: none;
