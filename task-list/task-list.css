@@ -14,10 +14,14 @@ body {
 main header {
   background: black;
   padding: 1em;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 5px 1px var(--theme-color);
 }
 
 h1 {
   margin: 0;
+  font-size: 1.5em;
 }
 
 .tasks,
@@ -107,6 +111,11 @@ h1 {
   border-bottom: 2px solid currentColor;
 }
 
+.task-preview .details-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .task-preview .chip {
   display: none;
 }
@@ -122,7 +131,7 @@ h1 {
   font-size: 0.75em;
 }
 
-.task.has-due-date > .task-preview > .task-data,
+.task.has-due-date > .task-preview > .details-link > .task-data,
 .task.has-description > .task-preview > .task-data {
   /* display */
   display: flex;
@@ -145,12 +154,17 @@ h1 {
 
 .task.task.has-due-date.has-reminder
   > .task-preview
+  > .details-link
   > .task-data
   .notif-indicator {
   display: inline-block;
 }
 
-.task.task.has-due-date > .task-preview > .task-data .task-due-date {
+.task.task.has-due-date
+  > .task-preview
+  > .details-link
+  > .task-data
+  .task-due-date {
   display: inline-block;
   font-family: inherit;
   font-size: 0.75em;
@@ -158,12 +172,17 @@ h1 {
 
 .task.has-due-date.is-recurring
   > .task-preview
+  > .details-link
   > .task-data
   .recurring-indicator {
   display: inline-block;
 }
 
-.task.has-description > .task-preview > .task-data .description-indicator {
+.task.has-description
+  > .task-preview
+  > .details-link
+  > .task-data
+  .description-indicator {
   display: inline-block;
 }
 
