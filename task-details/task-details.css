@@ -24,6 +24,7 @@ main header .task-preview {
 
 .task-details legend {
   color: var(--theme-color);
+  margin-bottom: 0.25em;
 }
 
 .task-details .task-date-info {
@@ -57,7 +58,29 @@ main header .task-preview {
 }
 
 .task-date-info button.material-icons {
-  border: 2px solid var(--theme-color);
+  border: 2px solid white;
   padding: 0.25em 0.5em;
   border-radius: 1em;
+}
+
+.task-description textarea {
+  /* display */
+  /* positioning */
+  /* box-model */
+  background: #888;
+  border: 2px solid white;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  width: 100%;
+  min-height: fit-content;
+  height: 5em;
+  max-height: 400px;
+
+  /* typography */
+  font-size: 0.75em;
+  font-family: inherit;
+  color: inherit;
+
+  /* manipulation */
+  /* misc */
 }
