@@ -125,8 +125,14 @@ h1 {
 .task.has-reminder > .task-preview > .due-date-chip .notif-indicator {
   display: inline-block;
 }
+
 .task.is-recurring > .task-preview > .due-date-chip .recurring-indicator {
   display: inline-block;
 }
-.task.has-due-date > .task-preview > .due-date-chip {
+
+.task-preview .task-more {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
 }
