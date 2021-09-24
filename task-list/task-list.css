@@ -44,6 +44,11 @@ h1 {
   font-size: inherit;
 }
 
+.task + .task,
+.subtasks:not(:empty) {
+  border-top: 1px solid #aaa;
+}
+
 .task-preview {
   /* display */
   display: flex;
@@ -82,7 +87,7 @@ h1 {
   /* box-model */
   background: transparent;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 
   /* typography */
   font-size: inherit;
@@ -176,5 +181,4 @@ h1 {
 
 .task .subtasks {
   padding-left: 1.63em;
-  background-color: #888;
 }
