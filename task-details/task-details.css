@@ -1,3 +1,63 @@
 main header .task-preview {
   padding: 0;
 }
+
+.task-details {
+  /* display */
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1em;
+  /* positioning */
+  /* box-model */
+  padding: 1em;
+
+  /* typography */
+  /* manipulation */
+  /* misc */
+}
+
+.task-details fieldset {
+  padding: 0;
+  border: 0;
+  outline: 1px solid orange;
+}
+
+.task-details legend {
+  color: var(--theme-color);
+}
+
+.task-details .task-date-info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.task-date-info .task-due-date,
+.task-date-info .material-icons {
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.task-date-info .task-due-date {
+  border-bottom: 2px solid white;
+}
+
+.task-date-info .task-due-date:focus {
+  background: #444;
+  outline: none;
+  border-bottom: 2px solid var(--theme-color);
+}
+
+.task-date-info .button-wrapper {
+  display: flex;
+  gap: inherit;
+}
+
+.task-date-info button.material-icons {
+  border: 2px solid var(--theme-color);
+  padding: 0.25em 0.5em;
+  border-radius: 1em;
+}
