@@ -110,6 +110,10 @@ h1 {
   width: max-content;
 }
 
+.task-preview .chip .material-icons {
+  font-size: 0.75em;
+}
+
 .task.has-due-date > .task-preview > .task-data,
 .task.has-description > .task-preview > .task-data {
   /* display */
