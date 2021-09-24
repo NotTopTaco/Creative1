@@ -1,5 +1,6 @@
 * {
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 html,
@@ -118,6 +119,7 @@ h1 {
 
 .task-preview .chip {
   display: none;
+  height: 1.5em;
 }
 
 .task-preview .chip * {
