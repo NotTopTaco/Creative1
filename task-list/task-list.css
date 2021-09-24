@@ -93,6 +93,8 @@ h1 {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 
   /* manipulation */
   /* misc */
