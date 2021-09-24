@@ -28,10 +28,15 @@ h1 {
   padding: 0;
 
   /* typography */
+
   /* manipulation */
 
   /* misc */
   list-style: none;
+}
+
+.tasks {
+  font-size: 1.5em;
 }
 
 .task-preview {
@@ -43,23 +48,25 @@ h1 {
 
   /* positioning */
   /* box-model */
+  padding: 0.5em;
+
   /* typography */
-  font-size: 1.5em;
   /* manipulation */
   /* misc */
-}
-
-.task-preview {
-  padding: 0.5em;
 }
 
 .task-preview > * {
   flex: 0 0 auto;
 }
 
+.task-preview .task-drag-handle {
+  width: 1em;
+}
+
 .task-preview .task-check {
   height: 2em;
   width: 2em;
+  margin: 0;
 }
 
 .task-preview .task-name {
@@ -96,13 +103,8 @@ h1 {
   width: max-content;
 }
 
-.task-preview .chip .task-due-date {
-  display: inline-block;
-  font-family: inherit;
-  font-size: 0.75em;
-}
-
-.task.has-due-date > .task-preview > .due-date-chip {
+.task.has-due-date > .task-preview > .task-data,
+.task.has-description > .task-preview > .task-data {
   /* display */
   display: flex;
   flex-direction: row nowrap;
@@ -122,17 +124,43 @@ h1 {
   /* misc */
 }
 
-.task.has-reminder > .task-preview > .due-date-chip .notif-indicator {
+.task.task.has-due-date.has-reminder
+  > .task-preview
+  > .task-data
+  .notif-indicator {
   display: inline-block;
 }
 
-.task.is-recurring > .task-preview > .due-date-chip .recurring-indicator {
+.task.task.has-due-date > .task-preview > .task-data .task-due-date {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.75em;
+}
+
+.task.has-due-date.is-recurring
+  > .task-preview
+  > .task-data
+  .recurring-indicator {
+  display: inline-block;
+}
+
+.task.has-description > .task-preview > .task-data .description-indicator {
   display: inline-block;
 }
 
 .task-preview .task-more {
+  display: none;
+}
+
+.task:not(.has-description):not(.has-due-date):not(.has-reminder):not(.is-recurring)
+  .task-more {
+  display: inline-block;
   background: transparent;
   border: none;
   padding: 0;
   color: inherit;
+}
+
+.task .subtasks {
+  padding-left: 1.63em;
 }

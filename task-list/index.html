@@ -1,19 +1,25 @@
 <!-- Task Boilerplate
-<!--Task --
-<li class="task">
+<!-- Task --
+<li class="task has-due-date has-reminder is-recurring has-description">
   <div class="task-preview">
     <span class="material-icons task-drag-handle"> drag_handle </span>
-    <input type="checkbox" class="task-check" id="task-check-1" />
-    <input type="text" class="task-name" id="task-name-1" />
-    <div class="chip due-date-chip">
-      <button class="material-icons notif-indicator">notifications_active</button>
-      <input type="date" class="task-due-date" id="task-due-date-1" />     
+    <input type="checkbox" class="task-check"/>
+    <input type="text" class="task-name"/>
+    <div class="chip task-data">
+      <span class="material-icons notif-indicator">
+        notifications_active
+      </span>
+      <span class="task-due-date">9/25</span>
       <span class="material-icons recurring-indicator">cached</span>
+      <span class="material-icons description-indicator">notes</span>
     </div>
-    <button class="task-more"><i class="material-icons">more_vert</i></button>
+    <button class="task-more">
+      <i class="material-icons">more_vert</i>
+    </button>
   </div>
   <ul class="subtasks"></ul>
-</li>-->
+</li>
+-->
 
 <!DOCTYPE html>
 <html>
@@ -41,18 +47,19 @@
       <header><h1>My Tasks</h1></header>
       <ul class="tasks">
         <!-- Task -->
-        <li class="task has-due-date has-reminder is-recurring">
+        <li class="task has-due-date has-reminder is-recurring has-description">
           <div class="task-preview">
             <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" id="task-check-1" />
+            <input type="checkbox" class="task-check" />
 
-            <input type="text" class="task-name" id="task-name-1" />
-            <div class="chip due-date-chip">
-              <button class="material-icons notif-indicator">
+            <input type="text" class="task-name" />
+            <div class="chip task-data">
+              <span class="material-icons notif-indicator">
                 notifications_active
-              </button>
-              <input type="date" class="task-due-date" id="task-due-date-1" />
-              <span class="material-icons recurring-indicator">cached</span>
+              </span>
+              <span class="task-due-date">9/25</span>
+              <span class="material-icons recurring-indicator">cached</span
+              ><span class="material-icons description-indicator"> notes </span>
             </div>
             <button class="task-more">
               <i class="material-icons">more_vert</i>
@@ -65,18 +72,14 @@
                 <span class="material-icons task-drag-handle">
                   drag_handle
                 </span>
-                <input type="checkbox" class="task-check" id="task-check-1" />
+                <input type="checkbox" class="task-check" />
 
-                <input type="text" class="task-name" id="task-name-1" />
-                <div class="chip due-date-chip">
-                  <button class="material-icons notif-indicator">
+                <input type="text" class="task-name" />
+                <div class="chip task-data">
+                  <span class="material-icons notif-indicator">
                     notifications_active
-                  </button>
-                  <input
-                    type="date"
-                    class="task-due-date"
-                    id="task-due-date-1"
-                  />
+                  </span>
+                  <span class="task-due-date">9/25</span>
                   <button class="material-icons recurring-indicator">
                     cached
                   </button>
