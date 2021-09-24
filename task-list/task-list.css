@@ -39,6 +39,7 @@ h1 {
   display: flex;
   flex-flow: row nowrap;
   column-gap: 0.5em;
+  align-items: center;
 
   /* positioning */
   /* box-model */
