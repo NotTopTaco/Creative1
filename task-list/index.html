@@ -1,0 +1,59 @@
+<!-- Task Boilerplate
+<!--Task --
+<li class="task">
+  <span class="material-icons-outlined"> drag_handle </span>
+  <input type="checkbox" class="task-check" id="task-check-1" />
+  <input type="text" class="task-name" id="task-name-1"></input>
+  <input type="date" class="task-due-date" id="task-due-date-1" />
+  <button><i class="material-icons-outlined">more_vert</i></button>
+  <ul class="subtasks"></ul>
+</li>-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="task-list.css"
+    />
+    <script src="main.js"></script>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Bootstrap Header here -->
+    <main>
+      <header><h1>My Tasks</h1></header>
+      <ul class="tasks">
+        <!-- Task -->
+        <li class="task">
+          <span class="material-icons-outlined"> drag_handle </span>
+          <input type="checkbox" class="task-check" id="task-check-1" />
+          <input type="text" class="task-name" id="task-name-1"></input>
+          <input type="date" class="task-due-date" id="task-due-date-1" />
+          <button><i class="material-icons-outlined">more_vert</i></button>
+          <ul class="subtasks">
+            <!-- Task -->
+            <li class="task">
+              <span class="material-icons-outlined"> drag_handle </span>
+              <input type="checkbox" class="task-check" id="task-check-1-1" />
+              <input type="text" class="task-name" id="task-name-1-1"></input>
+              <input type="date" class="task-due-date" id="task-due-date-1-1" />
+              <button><i class="material-icons-outlined">more_vert</i></button>
+              <ul class="subtasks"></ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
