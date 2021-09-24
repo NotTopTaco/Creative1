@@ -137,7 +137,7 @@ h1 {
 .task.has-description > .task-preview > .details-link > .task-data {
   /* display */
   display: flex;
-  flex-direction: row nowrap;
+  flex-flow: row nowrap;
   align-items: center;
   column-gap: 0.25em;
 
