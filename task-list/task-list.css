@@ -23,7 +23,7 @@ h1 {
   /* display */
   /* positioning */
   /* box-model */
-  background: #bbb;
+  background: #666;
   margin: 0;
   padding: 0;
 
@@ -38,12 +38,48 @@ h1 {
   /* display */
   display: flex;
   flex-flow: row nowrap;
+  column-gap: 0.5em;
+
   /* positioning */
   /* box-model */
   /* typography */
+  font-size: 1.5em;
   /* manipulation */
   /* misc */
 }
 
 .task-preview {
+  padding: 0.5em;
+}
+
+.task-preview > * {
+  flex: 0 0 auto;
+}
+
+.task-preview .task-check {
+  height: 2em;
+  width: 2em;
+}
+
+.task-preview .task-name {
+  /* display */
+  flex: 1 0 10ch;
+
+  /* positioning */
+  /* box-model */
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+
+  /* typography */
+  font-size: inherit;
+  /* manipulation */
+  /* misc */
+}
+
+.task-preview .task-name:focus {
+  /* Bubble? */
+  color: gold;
+  outline: none;
+  border-bottom: 2px solid currentColor;
 }
