@@ -8,7 +8,6 @@ body {
   padding: 0;
   color: white;
   --theme-color: yellow;
-  font-size: 1.25em;
 }
 
 main header {
@@ -35,6 +34,14 @@ h1 {
 
   /* misc */
   list-style: none;
+}
+
+.tasks {
+  font-size: 1.25rem;
+}
+
+.tasks .material-icons {
+  font-size: inherit;
 }
 
 .task-preview {
