@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleWebb.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -41,16 +41,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Disabled</a>
+                        <a class="nav-link" href="#" tabindex="-1">Reviews</a>
                     </li>
                 </ul>
             </div>
         </div>
         <form class="container-fluid justify-content-end">
-            <button class="btn btn-outline-success me-2" type="button">Sign Up</button>
+            <button id="signUp" class="btn btn-outline-success me-2" type="button">Sign Up</button>
             <button class="btn btn-sm btn-outline-secondary" type="button">Login</button>
         </form>
     </nav>
@@ -66,27 +66,29 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
+
             <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/d4/78/eb/d478ebc602834a5466fe3ef2cdb9feb6.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5>Take Charge of your Time</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://api.creativecommons.engineering/v1/thumbs/2ff12ea0-9a69-4a0d-89ce-ba28afa353ec"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h5>Simply Put</h5>
+                    <p>our #1 priority</p>
+                </div>
+            </div>
+            <div class="carousel-item">
                 <img src="https://512pixels.net/downloads/macos-wallpapers-thumbs/10-12--thumb.jpg"
                     class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-sm-block">
-                    <h5>First slide label</h5>
+                    <h5>Reach New Heights</h5>
                     <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://i.insider.com/5d8e37cf2e22af1b8803afdd?width=1000&format=jpeg&auto=webp"
-                    class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="http://i.imgur.com/KjyvQ6I.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
         </div>
@@ -102,130 +104,54 @@
         </button>
     </div>
 
-    <!-- <h1>Make Money <a href="https://www.youtube.com">Here</a>... I mean help people</h1>
-    <img src="https://www.tellermate.com/us/wp-content/uploads/sites/8/2020/05/Cash-US.jpg" width=800px>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, culpa eligendi harum nobis autem, quia similique
-        neque ullam debitis molestiae voluptatibus hic facilis. Earum explicabo maiores itaque mollitia, iure laborum.
-    </p> -->
-
-    <div id="sidebar">
-        <br>
-        To get Data: <br> Ctrl+A then Ctrl+C <br><br>
-        <label for="inbut">Paste Data Here:</label>
-        <input type="text" placeholder="Ctrl+V" id="inbut"> <br>
-        <label for="fees">Fee: </label>
-        <input type="number" name="fees" id="fees" step=".50" min=0 placeholder="0.00"><br>
-        <!-- <label for="futureRenewal">When does the current policy renew? </label>
-        <input type="date" name="futureRenewal" id="futureRenewal" placeholder="mm/dd/yyyy"> <br> -->
-        <label for="suspR">Suspension/Reinstatement?</label>
-        <select name="suspR" id="suspR">
-            <option value="yes">Yes</option>
-            <option value="no" selected>No</option>
-        </select>
-        <br>
-        <label for="bundl">Select Option: </label>
-        <select name="bundl" id="bundl">
-            <!-- <option hidden selected>Select one...</option> -->
-            <option value="property">Bundle Property</option>
-            <option value="life">Bundle Life Insurance</option>
-            <option value="umbrella">Bundle Umbrella</option>
-            <option selected value="info">Do you know what we cover?</option>
-        </select>
-        <br>
-        <input type="submit" id="submit" value="Submit" onclick="formdata()" />
-        <button onClick="window.location.reload();">Reset</button>
-        <!-- you can also do type = url tel email -->
-
-    </div>
-
-    <div class="container" id="container">
-        <h2 id="clientName" style="margin: 0;">
-        </h2>
-        <p id="pperiod" style="margin: 0;"></p>
-        <hr>
-        <h3 id="edate" style="margin: 0;"></h3>
-        <hr>
-        <!-- <h2 class="bar-title" id="premState">
-        </h2> -->
-        <span id=oldPremState></span>
-        <div class="bar">
-            <div class="bar-inner" id="oldPrm" data-percent="" data-width=0%></div>
-        </div>
-        <span id="newPremState"></span>
-        <div class="bar" id="newPBar">
-            <div class="bar-inner" id="newPrm" data-percent="" data-width=0%></div>
-        </div>
-        <div id="pchange"></div>
-        <hr>
-
-        <div class="pmtSchedule">
-            <h4 class="renewalHead">New Payment Schedule</h4>
-            <!-- <table>
-                <thead>
-                    <th>mm/dd</th>
-                    <th>Bill</th>
-                    <th>Breakdown</th>
-                </thead>
-                <tr id="adueRow" class="tRows">
-                </tr>
-                <tr id="Row1" class="tRows">
-                </tr>
-                <tr id="Row2" class="tRows">
-                </tr>
-                <tr id="Row3" class="tRows">
-                </tr>
-                <tr id="Row4" class="tRows">
-                </tr>
-                <tr id="Row5" class="tRows">
-                </tr>
-                <tr id="Row6" class="tRows">
-                </tr>
-            </table> -->
-            <p id="pmtSchedule"><i>mm/dd Bill <span class="breakdown">Breakdown</span></i></p>
-            <span id="totalDefPrem"></span>
-        </div>
-        <div id="renewal">
-            <hr>
-            <h4 class="renewalHead">Anticipated Renewal Billing</h4>
-            <!-- <h4 id="renewalHead" class="comment">Anticipated Renewal Billing</h4> -->
-        </div>
-        <div id="specialCase">
-            <hr>
-            <h4 class="renewalHead" id="specialNote"></h4>
-        </div>
-        <div>
-            <h4 class="renewalHead">Did you Know?</h4>
-            <div id="bundling">
+    <div class="container marketing">
+        <br> <br>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Slow the Hustle. <span class="textmuted">Accelerate your future.</span>
+                </h2>
+                <p class="lead leader">Sometimes we all just need to take a pause on life to get it running again. See
+                    how our tool can rejuvinate your productivity today!</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://api.creativecommons.engineering/v1/thumbs/73abb07e-44dd-45f1-82ad-428328e33775" alt=""
+                    style="width: 100%; height: auto; border-radius: 5%;">
 
             </div>
-
         </div>
 
-        <hr>
+        <hr class="featurette-divider">
 
-        <div id="eComment">
-            <!-- <textarea id="eComment" cols="30" rows="4" readonly></textarea> -->
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="textmuted">See for
+                        yourself.</span></h2>
+                <p class="lead leader">Join today and become one of the millions that have transformed their lives with
+                    our
+                    revolutionary tool</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://api.creativecommons.engineering/v1/thumbs/b9271c5e-670b-4059-a276-a64acc77fb41" alt=""
+                    style="width: 100%; height: auto; border-radius: 5%;">
+
+            </div>
         </div>
-    </div>
-
-    <div class="container" id="noData">
-
-    </div>
-
-    <!-- <div>
-        <textarea id="" cols="30" rows="4" readonly></textarea>
-    </div> -->
-
-    <div id="dameat">
-        <!-- this is where all the data gets dumped to  -->
-    </div>
 
 
 
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
 
 
 
-
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2021 Jacob McKenzie & ______ _______, Inc. &middot; <a
+                href="https://github.com/NotTopTaco/Creative1">Repository</a> &middot; <a href="#">Terms</a></p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
