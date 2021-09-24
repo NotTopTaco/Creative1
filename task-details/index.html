@@ -68,6 +68,7 @@
       <!-- Task details -->
       <form class="task-details">
         <fieldset class="task-date-info">
+          <legend>Due Date</legend>
           <input type="date" task-due-date" value="2021-09-25" />
           <span class="material-icons notif-indicator"
             >notifications_active</span
@@ -76,45 +77,45 @@
         </fieldset>
 
         <fieldset class="task-description">
-          <label>
-            <h2>Description</h2>
-            <textarea></textarea>
-          </label>
+          <legend>Description</legend>
+          <textarea></textarea>
         </fieldset>
 
-        <h2>Attachments</h2>
-        <fieldset class="attachments">
-          <div class="new attachment">
-            <img src="" alt="" />
-            <div class="card-text">
-              <span class="material-icons"></span>
-              <span class="card-title>"></span>
+        <fieldset>
+          <legend>Attachments</legend>
+          <div class="attachments">
+            <div class="new attachment">
+              <img src="" alt="" />
+              <div class="card-text">
+                <span class="material-icons"></span>
+                <span class="card-title>"></span>
+              </div>
+              <input type="file" name="" />
             </div>
-            <input type="file" name="" />
-          </div>
-          <div class="attachment">
-            <img src="" alt="" />
-            <div class="card-text">
-              <span class="material-icons">image</span>
-              <span class="card-title>">image.png</span>
+            <div class="attachment">
+              <img src="" alt="" />
+              <div class="card-text">
+                <span class="material-icons">image</span>
+                <span class="card-title>">image.png</span>
+              </div>
+              <input type="file" name="image.png" />
             </div>
-            <input type="file" name="image.png" />
-          </div>
-          <div class="attachment">
-            <img src="" alt="" />
-            <div class="card-text">
-              <span class="material-icons">picture_as_pdf</span>
-              <span class="card-title>">pdf.pdf</span>
+            <div class="attachment">
+              <img src="" alt="" />
+              <div class="card-text">
+                <span class="material-icons">picture_as_pdf</span>
+                <span class="card-title>">pdf.pdf</span>
+              </div>
+              <input type="file" name="pdf.pdf" />
             </div>
-            <input type="file" name="pdf.pdf" />
-          </div>
-          <div class="attachment">
-            <img src="" alt="" />
-            <div class="card-text">
-              <span class="material-icons">description</span>
-              <span class="card-title>">document.docx</span>
+            <div class="attachment">
+              <img src="" alt="" />
+              <div class="card-text">
+                <span class="material-icons">description</span>
+                <span class="card-title>">document.docx</span>
+              </div>
+              <input type="file" name="document.docx" />
             </div>
-            <input type="file" name="document.docx" />
           </div>
         </fieldset>
       </form>
