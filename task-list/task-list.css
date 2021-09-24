@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  background: #666;
   --theme-color: yellow;
 }
 
@@ -24,7 +25,6 @@ h1 {
   /* display */
   /* positioning */
   /* box-model */
-  background: #666;
   margin: 0;
   padding: 0;
 
@@ -76,7 +76,7 @@ h1 {
 
 .task-preview .task-name {
   /* display */
-  flex: 1 0 10ch;
+  flex: 1 1 10ch;
 
   /* positioning */
   /* box-model */
