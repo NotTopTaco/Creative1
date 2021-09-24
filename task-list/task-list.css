@@ -162,6 +162,7 @@ h1 {
 
 .task-preview .task-more {
   display: none;
+  font-size: inherit;
 }
 
 .task:not(.has-description):not(.has-due-date):not(.has-reminder):not(.is-recurring)
