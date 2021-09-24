@@ -1,12 +1,12 @@
 * {
   max-width: 100%;
-  color: white;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 main header {
@@ -83,4 +83,50 @@ h1 {
   color: gold;
   outline: none;
   border-bottom: 2px solid currentColor;
+}
+
+.task-preview .chip {
+  display: none;
+}
+
+.task-preview .chip * {
+  display: none;
+  background: transparent;
+  border: none;
+  width: max-content;
+}
+
+.task-preview .chip .task-due-date {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.75em;
+}
+
+.task.has-due-date > .task-preview > .due-date-chip {
+  /* display */
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  column-gap: 0.25em;
+
+  /* positioning */
+  /* box-model */
+  background: gold;
+  border-radius: 1em;
+  padding: 0.25em 0.5em;
+
+  /* typography */
+  color: black;
+
+  /* manipulation */
+  /* misc */
+}
+
+.task.has-reminder > .task-preview > .due-date-chip .notif-indicator {
+  display: inline-block;
+}
+.task.is-recurring > .task-preview > .due-date-chip .recurring-indicator {
+  display: inline-block;
+}
+.task.has-due-date > .task-preview > .due-date-chip {
 }
