@@ -1,9 +1,10 @@
 <!-- Task Boilerplate
 <!--Task --
-<li class="">
-  <input type="checkbox" id="task-1" />
-  <input type="text" class="task-name" />
-  <input type="date" class="task-due-date chip" />
+<li class="task">
+  <span class="material-icons-outlined"> drag_handle </span>
+  <input type="checkbox" class="task-check" id="task-check-1" />
+  <input type="text" class="task-name" id="task-name-1"></input>
+  <input type="date" class="task-due-date" id="task-due-date-1" />
   <button><i class="material-icons-outlined">more_vert</i></button>
   <ul class="subtasks"></ul>
 </li>-->
@@ -32,14 +33,25 @@
     <!-- Bootstrap Header here -->
     <main>
       <header><h1>My Tasks</h1></header>
-      <ul>
+      <ul class="tasks">
         <!-- Task -->
-        <li class="">
-          <input type="checkbox" id="task-1" />
-          <input type="text" class="task-name" />
-          <input type="date" class="task-due-date chip" />
+        <li class="task">
+          <span class="material-icons-outlined"> drag_handle </span>
+          <input type="checkbox" class="task-check" id="task-check-1" />
+          <input type="text" class="task-name" id="task-name-1"></input>
+          <input type="date" class="task-due-date" id="task-due-date-1" />
           <button><i class="material-icons-outlined">more_vert</i></button>
-          <ul class="subtasks"></ul>
+          <ul class="subtasks">
+            <!-- Task -->
+            <li class="task">
+              <span class="material-icons-outlined"> drag_handle </span>
+              <input type="checkbox" class="task-check" id="task-check-1-1" />
+              <input type="text" class="task-name" id="task-name-1-1"></input>
+              <input type="date" class="task-due-date" id="task-due-date-1-1" />
+              <button><i class="material-icons-outlined">more_vert</i></button>
+              <ul class="subtasks"></ul>
+            </li>
+          </ul>
         </li>
       </ul>
     </main>

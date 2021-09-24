@@ -1,0 +1,39 @@
+* {
+  max-width: 100%;
+  color: white;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+main header {
+  background: black;
+}
+
+.tasks, .subtasks {
+  /* display */
+  /* positioning */
+  /* box-model */
+  background: #bbb;
+  margin: 0;
+  padding: 0;
+
+  /* typography */
+  /* manipulation */
+
+  /* misc */
+  list-style: none;
+}
+
+.task {
+  /* display */
+  display: flex;
+  flex-flow: row nowrap;
+  /* positioning */
+  /* box-model */
+  /* typography */
+  /* manipulation */
+  /* misc */
+}
