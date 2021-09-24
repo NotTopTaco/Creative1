@@ -1,39 +1,184 @@
 * {
   max-width: 100%;
-  color: white;
 }
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
+  color: white;
+  background: #666;
+  --theme-color: yellow;
 }
 
 main header {
   background: black;
+  padding: 1em;
 }
 
-.tasks, .subtasks {
+h1 {
+  margin: 0;
+}
+
+.tasks,
+.subtasks {
   /* display */
   /* positioning */
   /* box-model */
-  background: #bbb;
   margin: 0;
   padding: 0;
 
   /* typography */
+
   /* manipulation */
 
   /* misc */
   list-style: none;
 }
 
-.task {
+.tasks {
+  font-size: 1.25rem;
+}
+
+.tasks .material-icons {
+  font-size: inherit;
+}
+
+.task + .task,
+.subtasks:not(:empty) {
+  border-top: 1px solid #aaa;
+}
+
+.task-preview {
   /* display */
   display: flex;
   flex-flow: row nowrap;
+  column-gap: 0.5em;
+  align-items: center;
+
   /* positioning */
   /* box-model */
+  padding: 0.5em;
+
   /* typography */
   /* manipulation */
   /* misc */
+}
+
+.task-preview > * {
+  flex: 0 0 auto;
+}
+
+.task-preview .task-drag-handle {
+  width: 1em;
+}
+
+.task-preview .task-check {
+  height: 2em;
+  width: 2em;
+  margin: 0;
+}
+
+.task-preview .task-name {
+  /* display */
+  flex: 1 1 10ch;
+
+  /* positioning */
+  /* box-model */
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+
+  /* typography */
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+
+  /* manipulation */
+  /* misc */
+}
+
+.task-preview .task-name:focus {
+  /* Bubble? */
+  color: var(--theme-color);
+  outline: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.task-preview .chip {
+  display: none;
+}
+
+.task-preview .chip * {
+  display: none;
+  background: transparent;
+  border: none;
+  width: max-content;
+}
+
+.task-preview .chip .material-icons {
+  font-size: 0.75em;
+}
+
+.task.has-due-date > .task-preview > .task-data,
+.task.has-description > .task-preview > .task-data {
+  /* display */
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  column-gap: 0.25em;
+
+  /* positioning */
+  /* box-model */
+  background: var(--theme-color);
+  border-radius: 1em;
+  padding: 0.25em 0.5em;
+
+  /* typography */
+  color: black;
+
+  /* manipulation */
+  /* misc */
+}
+
+.task.task.has-due-date.has-reminder
+  > .task-preview
+  > .task-data
+  .notif-indicator {
+  display: inline-block;
+}
+
+.task.task.has-due-date > .task-preview > .task-data .task-due-date {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.75em;
+}
+
+.task.has-due-date.is-recurring
+  > .task-preview
+  > .task-data
+  .recurring-indicator {
+  display: inline-block;
+}
+
+.task.has-description > .task-preview > .task-data .description-indicator {
+  display: inline-block;
+}
+
+.task-preview .task-more {
+  display: none;
+  font-size: inherit;
+}
+
+.task:not(.has-description):not(.has-due-date):not(.has-reminder):not(.is-recurring)
+  .task-more {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+.task .subtasks {
+  padding-left: 1.63em;
 }
