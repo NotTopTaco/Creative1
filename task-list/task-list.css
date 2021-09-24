@@ -3,16 +3,23 @@
   color: white;
 }
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 main header {
   background: black;
+  padding: 1em;
 }
 
-.tasks, .subtasks {
+h1 {
+  margin: 0;
+}
+
+.tasks,
+.subtasks {
   /* display */
   /* positioning */
   /* box-model */
@@ -27,7 +34,7 @@ main header {
   list-style: none;
 }
 
-.task {
+.task-preview {
   /* display */
   display: flex;
   flex-flow: row nowrap;
@@ -36,4 +43,7 @@ main header {
   /* typography */
   /* manipulation */
   /* misc */
+}
+
+.task-preview {
 }
