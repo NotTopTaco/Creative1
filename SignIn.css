@@ -16,6 +16,10 @@ body {
     color: #212529;
 }
 
+.form .control {
+    padding-bottom: 5px;
+}
+
 html, body {
     height: 100%;
 }
@@ -26,5 +30,9 @@ html, body {
 
 button {
     background-color: #212529 !important;
+    width: 100%;
 
+}
+button:hover {
+    color: yellow !important;
 }
