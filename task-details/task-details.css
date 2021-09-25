@@ -39,7 +39,7 @@ main header .back-button {
 }
 
 .task-date-info .task-due-date,
-.task-date-info .material-icons {
+.task-date-info .button {
   font-size: inherit;
   color: inherit;
   background-color: inherit;
@@ -62,10 +62,16 @@ main header .back-button {
   gap: inherit;
 }
 
-.task-date-info button.material-icons {
+.task-date-info .button {
+  font-size: 1em;
   border: 2px solid white;
   padding: 0.25em 0.5em;
-  border-radius: 1em;
+  border-radius: 2em;
+}
+
+.task-date-info .button .material-icons {
+  vertical-align: middle;
+  font-size: inherit;
 }
 
 .task-description textarea {
