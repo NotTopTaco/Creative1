@@ -2,6 +2,11 @@ main header .task-preview {
   padding: 0;
 }
 
+main header .back-button {
+  color: inherit;
+  text-decoration: none;
+}
+
 .task-details {
   /* display */
   display: flex;
