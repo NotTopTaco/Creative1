@@ -29,10 +29,22 @@ html, body {
 }
 
 button {
-    background-color: #212529 !important;
+    background-color: slategray !important;
     width: 100%;
+    border-color: black !important;
+    
 
 }
 button:hover {
     color: yellow !important;
+    border-color: yellow !important;
+}
+
+.form-signin {
+    border-color: black !important;
+    border-radius: 5% !important;
+    background-color: #212529;
+    border: 3px solid;
+    padding: 40px;
+    color: yellow;
 }
