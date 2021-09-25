@@ -84,3 +84,79 @@ main header .task-preview {
   /* manipulation */
   /* misc */
 }
+
+.task-details .attachments-fieldset {
+  overflow-x: clip;
+  min-width: unset;
+}
+
+.attachments-fieldset .attachments {
+  /* display */
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+
+  /* positioning */
+  overflow-x: scroll;
+
+  /* box-model */
+  background: #888;
+  border: 2px solid white;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+
+  /* typography */
+  /* manipulation */
+  /* misc */
+}
+
+.attachments .attachment {
+  /* display */
+  flex: 0 0 150px;
+
+  /* positioning */
+  position: relative;
+
+  /* box-model */
+  background: white;
+  border-radius: 1em;
+  max-width: 80vh;
+  border: 2px solid #888;
+  box-shadow: 0 0 5px 1px var(--theme-color);
+  overflow: hidden;
+
+  /* typography */
+  color: #666;
+
+  /* manipulation */
+  /* misc */
+}
+
+.attachment img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.attachment .card-text {
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 0.75em;
+}
+
+.attachment input {
+  display: none;
+}
+
+.new.attachment {
+  display: flex;
+  flex: 0 0 auto;
+  width: min-content;
+  flex-flow: column nowrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
