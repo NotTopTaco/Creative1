@@ -19,7 +19,6 @@ main header .task-preview {
 .task-details fieldset {
   padding: 0;
   border: 0;
-  outline: 1px solid orange;
 }
 
 .task-details legend {
@@ -85,6 +84,12 @@ main header .task-preview {
   /* misc */
 }
 
+.task-description textarea:focus {
+  background: #444;
+  outline: none;
+  border: 2px solid var(--theme-color);
+}
+
 .task-details .attachments-fieldset {
   overflow-x: clip;
   min-width: unset;
@@ -104,7 +109,7 @@ main header .task-preview {
   border: 2px solid white;
   width: 100%;
   padding: 0.5em;
-  border-radius: 0.5em;
+  border-radius: 1em;
 
   /* typography */
   /* manipulation */
