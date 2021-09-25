@@ -102,6 +102,10 @@ main header .back-button {
   border: 2px solid var(--theme-color);
 }
 
+.task-description textarea::placeholder {
+  color: #444;
+}
+
 .task-details .attachments-fieldset {
   overflow-x: clip;
   min-width: unset;
