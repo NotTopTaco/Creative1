@@ -1,0 +1,27 @@
+
+/* Header  */
+#signUp {
+    border-color: yellow;
+    color: white;
+}
+#signUp:hover {
+    background-color: yellow;
+    color: black;
+}
+
+footer a {
+    color: lightslategray;
+    /* background-color: white !important; */
+}
+
+/* .nav-item .nav-link .active {
+    background-color: yellow !important;
+    color: #212529 !important;
+} */
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFFF00;
+  }
+  
+
+  /* Footer */

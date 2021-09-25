@@ -11,20 +11,6 @@
    
 }
 
-#signUp {
-    border-color: yellow;
-    color: white;
-}
-#signUp:hover {
-    background-color: yellow;
-    color: black;
-}
-
-footer a {
-    color: lightslategray;
-    /* background-color: white !important; */
-}
-
 .carousel-caption {
     text-shadow: 1px 1px black;
 }

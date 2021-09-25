@@ -24,459 +24,414 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="task-list.css"
-    />
-    <script src="main.js"></script>
-    <!-- Material Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Bootstrap Header here -->
-    <main>
-      <header><h1>My Tasks</h1></header>
-      <ul class="tasks">
-        <!-- Task -->
-        <li class="task has-due-date has-reminder is-recurring has-description">
-          <div class="task-preview">
-            <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" checked />
-            <input type="text" class="task-name" value="Build homepage" />
-            <a class="details-link" href="../task-details"
-              ><div class="chip task-data">
-                <span class="task-due-date">Tomorrow</span>
-                <span class="material-icons notif-indicator">
-                  notifications_active
-                </span>
-                <span class="material-icons recurring-indicator">cached</span>
-                <span class="material-icons description-indicator">notes</span>
-              </div>
-              <button class="task-more">
-                <i class="material-icons">more_vert</i>
-              </button>
-            </a>
-          </div>
-          <ul class="subtasks"></ul>
-        </li>
-        <!-- Task -->
-        <li class="task has-due-date is-recurring">
-          <div class="task-preview">
-            <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" />
-            <input
-              type="text"
-              class="task-name"
-              value="Build additional pages"
-            />
-            <a class="details-link" href="../task-details"
-              ><div class="chip task-data">
-                <span class="task-due-date">Tomorrow</span>
-                <span class="material-icons notif-indicator">
-                  notifications_active
-                </span>
-                <span class="material-icons recurring-indicator">cached</span
-                ><span class="material-icons description-indicator">
-                  notes
-                </span>
-              </div>
-              <button class="task-more">
-                <i class="material-icons">more_vert</i>
-              </button>
-            </a>
-          </div>
-          <ul class="subtasks">
-            <!-- Task -->
-            <li class="task">
-              <div class="task-preview">
-                <span class="material-icons task-drag-handle">
-                  drag_handle
-                </span>
-                <input type="checkbox" class="task-check" />
-                <input type="text" class="task-name" value="Build page 1" />
-                <a class="details-link" href="../task-details"
-                  ><div class="chip task-data">
-                    <span class="task-due-date">Tomorrow</span>
-                    <span class="material-icons notif-indicator">
-                      notifications_active
-                    </span>
-                    <span class="material-icons recurring-indicator"
-                      >cached</span
-                    ><span class="material-icons description-indicator">
-                      notes
-                    </span>
-                  </div>
-                  <button class="task-more">
-                    <i class="material-icons">more_vert</i>
-                  </button>
-                </a>
-              </div>
-              <ul class="subtasks"></ul>
-            </li>
-            <!-- Task -->
-            <li class="task has-due-date">
-              <div class="task-preview">
-                <span class="material-icons task-drag-handle">
-                  drag_handle
-                </span>
-                <input type="checkbox" class="task-check" />
-                <input type="text" class="task-name" value="Build page 2" />
-                <a class="details-link" href="../task-details"
-                  ><div class="chip task-data">
-                    <span class="task-due-date">Tomorrow</span>
-                    <span class="material-icons notif-indicator">
-                      notifications_active
-                    </span>
-                    <span class="material-icons recurring-indicator"
-                      >cached</span
-                    ><span class="material-icons description-indicator">
-                      notes
-                    </span>
-                  </div>
-                  <button class="task-more">
-                    <i class="material-icons">more_vert</i>
-                  </button>
-                </a>
-              </div>
-              <ul class="subtasks">
-                <!-- Task -->
-                <li class="task has-due-date">
-                  <div class="task-preview">
-                    <span class="material-icons task-drag-handle">
-                      drag_handle
-                    </span>
-                    <input type="checkbox" class="task-check" />
-                    <input
-                      type="text"
-                      class="task-name"
-                      value="Ask Jacob if he can take this one"
-                    />
-                    <a class="details-link" href="../task-details"
-                      ><div class="chip task-data">
-                        <span class="task-due-date">Tomorrow</span>
-                        <span class="material-icons notif-indicator">
-                          notifications_active
-                        </span>
-                        <span class="material-icons recurring-indicator"
-                          >cached</span
-                        ><span class="material-icons description-indicator">
-                          notes
-                        </span>
-                      </div>
-                      <button class="task-more">
-                        <i class="material-icons">more_vert</i>
-                      </button>
-                    </a>
-                  </div>
-                  <ul class="subtasks"></ul>
-                </li>
-              </ul>
-            </li>
-            <!-- Task -->
-            <li class="task has-description">
-              <div class="task-preview">
-                <span class="material-icons task-drag-handle">
-                  drag_handle
-                </span>
-                <input type="checkbox" class="task-check" />
-                <input type="text" class="task-name" value="Build page 3" />
-                <a class="details-link" href="../task-details"
-                  ><div class="chip task-data">
-                    <span class="task-due-date">Tomorrow</span>
-                    <span class="material-icons notif-indicator">
-                      notifications_active
-                    </span>
-                    <span class="material-icons recurring-indicator"
-                      >cached</span
-                    ><span class="material-icons description-indicator">
-                      notes
-                    </span>
-                  </div>
-                  <button class="task-more">
-                    <i class="material-icons">more_vert</i>
-                  </button>
-                </a>
-              </div>
-              <ul class="subtasks"></ul>
-            </li>
-            <!-- Task -->
-            <li class="task">
-              <div class="task-preview">
-                <span class="material-icons task-drag-handle">
-                  drag_handle
-                </span>
-                <input type="checkbox" class="task-check" />
-                <input type="text" class="task-name" value="Build page 4" />
-                <a class="details-link" href="../task-details"
-                  ><div class="chip task-data">
-                    <span class="task-due-date">Tomorrow</span>
-                    <span class="material-icons notif-indicator">
-                      notifications_active
-                    </span>
-                    <span class="material-icons recurring-indicator"
-                      >cached</span
-                    ><span class="material-icons description-indicator">
-                      notes
-                    </span>
-                  </div>
-                  <button class="task-more">
-                    <i class="material-icons">more_vert</i>
-                  </button>
-                </a>
-              </div>
-              <ul class="subtasks"></ul>
-            </li>
-          </ul>
-        </li>
-        <!-- Task -->
-        <li class="task">
-          <div class="task-preview">
-            <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" />
-            <input type="text" class="task-name" value="Get images" />
-            <a class="details-link" href="../task-details"
-              ><div class="chip task-data">
-                <span class="task-due-date"></span>
-                <span class="material-icons notif-indicator">
-                  notifications_active
-                </span>
-                <span class="material-icons recurring-indicator">cached</span>
-                <span class="material-icons description-indicator">notes</span>
-              </div>
-              <button class="task-more">
-                <i class="material-icons">more_vert</i>
-              </button>
-            </a>
-          </div>
-          <ul class="subtasks"></ul>
-        </li>
-        <!-- Task -->
-        <li class="task has-due-date has-reminder">
-          <div class="task-preview">
-            <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" />
-            <input
-              type="text"
-              class="task-name"
-              value="Create bootstrap menu"
-            />
-            <a class="details-link" href="../task-details"
-              ><div class="chip task-data">
-                <span class="task-due-date">Tomorrow</span>
-                <span class="material-icons notif-indicator">
-                  notifications_active
-                </span>
-                <span class="material-icons recurring-indicator">cached</span>
-                <span class="material-icons description-indicator">notes</span>
-              </div>
-              <button class="task-more">
-                <i class="material-icons">more_vert</i>
-              </button>
-            </a>
-          </div>
-          <ul class="subtasks"></ul>
-        </li>
-        <!-- Task -->
-        <li class="task">
-          <div class="task-preview">
-            <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" />
-            <input type="text" class="task-name" value="Create Footer" />
-            <a class="details-link" href="../task-details"
-              ><div class="chip task-data">
-                <span class="task-due-date">Tomorrow</span>
-                <span class="material-icons notif-indicator">
-                  notifications_active
-                </span>
-                <span class="material-icons recurring-indicator">cached</span>
-                <span class="material-icons description-indicator">notes</span>
-              </div>
-              <button class="task-more">
-                <i class="material-icons">more_vert</i>
-              </button>
-            </a>
-          </div>
-          <ul class="subtasks">
-            <!-- Task -->
-            <li class="task">
-              <div class="task-preview">
-                <span class="material-icons task-drag-handle">
-                  drag_handle
-                </span>
-                <input type="checkbox" class="task-check" />
-                <input type="text" class="task-name" value="Add GH link" />
-                <a class="details-link" href="../task-details"
-                  ><div class="chip task-data">
-                    <span class="task-due-date">Tomorrow</span>
-                    <span class="material-icons notif-indicator">
-                      notifications_active
-                    </span>
-                    <span class="material-icons recurring-indicator"
-                      >cached</span
-                    >
-                    <span class="material-icons description-indicator"
-                      >notes</span
-                    >
-                  </div>
-                  <button class="task-more">
-                    <i class="material-icons">more_vert</i>
-                  </button>
-                </a>
-              </div>
-              <ul class="subtasks"></ul>
-            </li>
-          </ul>
-        </li>
-        <!-- Task -->
-        <li class="task">
-          <div class="task-preview">
-            <span class="material-icons task-drag-handle"> drag_handle </span>
-            <input type="checkbox" class="task-check" />
-            <input
-              type="text"
-              class="task-name"
-              value="Look how far I can nest!"
-            />
-            <a class="details-link" href="../task-details"
-              ><div class="chip task-data">
-                <span class="material-icons notif-indicator">
-                  notifications_active
-                </span>
-                <span class="task-due-date">Tomorrow</span>
-                <span class="material-icons recurring-indicator">cached</span>
-                <span class="material-icons description-indicator">notes</span>
-              </div>
-              <button class="task-more">
-                <i class="material-icons">more_vert</i>
-              </button>
-            </a>
-          </div>
-          <ul class="subtasks">
-            <li class="task">
-              <div class="task-preview">
-                <span class="material-icons task-drag-handle">
-                  drag_handle
-                </span>
-                <input type="checkbox" class="task-check" />
-                <input type="text" class="task-name" value="2" />
-                <a class="details-link" href="../task-details"
-                  ><div class="chip task-data">
-                    <span class="material-icons notif-indicator">
-                      notifications_active
-                    </span>
-                    <span class="task-due-date">Tomorrow</span>
-                    <span class="material-icons recurring-indicator"
-                      >cached</span
-                    >
-                    <span class="material-icons description-indicator"
-                      >notes</span
-                    >
-                  </div>
-                  <button class="task-more">
-                    <i class="material-icons">more_vert</i>
-                  </button>
-                </a>
-              </div>
-              <ul class="subtasks">
-                <li class="task has-description">
-                  <div class="task-preview">
-                    <span class="material-icons task-drag-handle">
-                      drag_handle
-                    </span>
-                    <input type="checkbox" class="task-check" />
-                    <input type="text" class="task-name" value="3" />
-                    <a class="details-link" href="../task-details"
-                      ><div class="chip task-data">
-                        <span class="material-icons notif-indicator">
-                          notifications_active
-                        </span>
-                        <span class="task-due-date">Tomorrow</span>
-                        <span class="material-icons recurring-indicator"
-                          >cached</span
-                        >
-                        <span class="material-icons description-indicator"
-                          >notes</span
-                        >
-                      </div>
-                      <button class="task-more">
-                        <i class="material-icons">more_vert</i>
-                      </button>
-                    </a>
-                  </div>
-                  <ul class="subtasks">
-                    <li class="task">
-                      <div class="task-preview">
-                        <span class="material-icons task-drag-handle">
-                          drag_handle
-                        </span>
-                        <input type="checkbox" class="task-check" />
-                        <input type="text" class="task-name" value="4" />
-                        <a class="details-link" href="../task-details"
-                          ><div class="chip task-data">
-                            <span class="material-icons notif-indicator">
-                              notifications_active
-                            </span>
-                            <span class="task-due-date">Tomorrow</span>
-                            <span class="material-icons recurring-indicator"
-                              >cached</span
-                            >
-                            <span class="material-icons description-indicator"
-                              >notes</span
-                            >
-                          </div>
-                          <button class="task-more">
-                            <i class="material-icons">more_vert</i>
-                          </button>
-                        </a>
-                      </div>
-                      <ul class="subtasks">
-                        <li class="task">
-                          <div class="task-preview">
-                            <span class="material-icons task-drag-handle">
-                              drag_handle
-                            </span>
-                            <input type="checkbox" class="task-check" />
-                            <input type="text" class="task-name" value="5" />
-                            <a class="details-link" href="../task-details"
-                              ><div class="chip task-data">
-                                <span class="material-icons notif-indicator">
-                                  notifications_active
-                                </span>
-                                <span class="task-due-date">Tomorrow</span>
-                                <span class="material-icons recurring-indicator"
-                                  >cached</span
-                                >
-                                <span
-                                  class="material-icons description-indicator"
-                                  >notes</span
-                                >
-                              </div>
-                              <button class="task-more">
-                                <i class="material-icons">more_vert</i>
-                              </button>
-                            </a>
-                          </div>
-                          <ul class="subtasks"></ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </main>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ZTasks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="task-list.css" />
+  <script src="main.js"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Bootstrap Header here -->
+  <main>
+    <header style="background-color: #212529;">
+      <h1>My Tasks</h1>
+    </header>
+    <ul class="tasks">
+      <!-- Task -->
+      <li class="task has-due-date has-reminder is-recurring has-description">
+        <div class="task-preview">
+          <span class="material-icons task-drag-handle"> drag_handle </span>
+          <input type="checkbox" class="task-check" checked />
+          <input type="text" class="task-name" value="Build homepage" />
+          <a class="details-link" href="../task-details">
+            <div class="chip task-data">
+              <span class="task-due-date">Tomorrow</span>
+              <span class="material-icons notif-indicator">
+                notifications_active
+              </span>
+              <span class="material-icons recurring-indicator">cached</span>
+              <span class="material-icons description-indicator">notes</span>
+            </div>
+            <button class="task-more">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </a>
+        </div>
+        <ul class="subtasks"></ul>
+      </li>
+      <!-- Task -->
+      <li class="task has-due-date is-recurring">
+        <div class="task-preview">
+          <span class="material-icons task-drag-handle"> drag_handle </span>
+          <input type="checkbox" class="task-check" />
+          <input type="text" class="task-name" value="Build additional pages" />
+          <a class="details-link" href="../task-details">
+            <div class="chip task-data">
+              <span class="task-due-date">Tomorrow</span>
+              <span class="material-icons notif-indicator">
+                notifications_active
+              </span>
+              <span class="material-icons recurring-indicator">cached</span><span
+                class="material-icons description-indicator">
+                notes
+              </span>
+            </div>
+            <button class="task-more">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </a>
+        </div>
+        <ul class="subtasks">
+          <!-- Task -->
+          <li class="task">
+            <div class="task-preview">
+              <span class="material-icons task-drag-handle">
+                drag_handle
+              </span>
+              <input type="checkbox" class="task-check" />
+              <input type="text" class="task-name" value="Build page 1" />
+              <a class="details-link" href="../task-details">
+                <div class="chip task-data">
+                  <span class="task-due-date">Tomorrow</span>
+                  <span class="material-icons notif-indicator">
+                    notifications_active
+                  </span>
+                  <span class="material-icons recurring-indicator">cached</span><span
+                    class="material-icons description-indicator">
+                    notes
+                  </span>
+                </div>
+                <button class="task-more">
+                  <i class="material-icons">more_vert</i>
+                </button>
+              </a>
+            </div>
+            <ul class="subtasks"></ul>
+          </li>
+          <!-- Task -->
+          <li class="task has-due-date">
+            <div class="task-preview">
+              <span class="material-icons task-drag-handle">
+                drag_handle
+              </span>
+              <input type="checkbox" class="task-check" />
+              <input type="text" class="task-name" value="Build page 2" />
+              <a class="details-link" href="../task-details">
+                <div class="chip task-data">
+                  <span class="task-due-date">Tomorrow</span>
+                  <span class="material-icons notif-indicator">
+                    notifications_active
+                  </span>
+                  <span class="material-icons recurring-indicator">cached</span><span
+                    class="material-icons description-indicator">
+                    notes
+                  </span>
+                </div>
+                <button class="task-more">
+                  <i class="material-icons">more_vert</i>
+                </button>
+              </a>
+            </div>
+            <ul class="subtasks">
+              <!-- Task -->
+              <li class="task has-due-date">
+                <div class="task-preview">
+                  <span class="material-icons task-drag-handle">
+                    drag_handle
+                  </span>
+                  <input type="checkbox" class="task-check" />
+                  <input type="text" class="task-name" value="Ask Jacob if he can take this one" />
+                  <a class="details-link" href="../task-details">
+                    <div class="chip task-data">
+                      <span class="task-due-date">Tomorrow</span>
+                      <span class="material-icons notif-indicator">
+                        notifications_active
+                      </span>
+                      <span class="material-icons recurring-indicator">cached</span><span
+                        class="material-icons description-indicator">
+                        notes
+                      </span>
+                    </div>
+                    <button class="task-more">
+                      <i class="material-icons">more_vert</i>
+                    </button>
+                  </a>
+                </div>
+                <ul class="subtasks"></ul>
+              </li>
+            </ul>
+          </li>
+          <!-- Task -->
+          <li class="task has-description">
+            <div class="task-preview">
+              <span class="material-icons task-drag-handle">
+                drag_handle
+              </span>
+              <input type="checkbox" class="task-check" />
+              <input type="text" class="task-name" value="Build page 3" />
+              <a class="details-link" href="../task-details">
+                <div class="chip task-data">
+                  <span class="task-due-date">Tomorrow</span>
+                  <span class="material-icons notif-indicator">
+                    notifications_active
+                  </span>
+                  <span class="material-icons recurring-indicator">cached</span><span
+                    class="material-icons description-indicator">
+                    notes
+                  </span>
+                </div>
+                <button class="task-more">
+                  <i class="material-icons">more_vert</i>
+                </button>
+              </a>
+            </div>
+            <ul class="subtasks"></ul>
+          </li>
+          <!-- Task -->
+          <li class="task">
+            <div class="task-preview">
+              <span class="material-icons task-drag-handle">
+                drag_handle
+              </span>
+              <input type="checkbox" class="task-check" />
+              <input type="text" class="task-name" value="Build page 4" />
+              <a class="details-link" href="../task-details">
+                <div class="chip task-data">
+                  <span class="task-due-date">Tomorrow</span>
+                  <span class="material-icons notif-indicator">
+                    notifications_active
+                  </span>
+                  <span class="material-icons recurring-indicator">cached</span><span
+                    class="material-icons description-indicator">
+                    notes
+                  </span>
+                </div>
+                <button class="task-more">
+                  <i class="material-icons">more_vert</i>
+                </button>
+              </a>
+            </div>
+            <ul class="subtasks"></ul>
+          </li>
+        </ul>
+      </li>
+      <!-- Task -->
+      <li class="task">
+        <div class="task-preview">
+          <span class="material-icons task-drag-handle"> drag_handle </span>
+          <input type="checkbox" class="task-check" />
+          <input type="text" class="task-name" value="Get images" />
+          <a class="details-link" href="../task-details">
+            <div class="chip task-data">
+              <span class="task-due-date"></span>
+              <span class="material-icons notif-indicator">
+                notifications_active
+              </span>
+              <span class="material-icons recurring-indicator">cached</span>
+              <span class="material-icons description-indicator">notes</span>
+            </div>
+            <button class="task-more">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </a>
+        </div>
+        <ul class="subtasks"></ul>
+      </li>
+      <!-- Task -->
+      <li class="task has-due-date has-reminder">
+        <div class="task-preview">
+          <span class="material-icons task-drag-handle"> drag_handle </span>
+          <input type="checkbox" class="task-check" />
+          <input type="text" class="task-name" value="Create bootstrap menu" />
+          <a class="details-link" href="../task-details">
+            <div class="chip task-data">
+              <span class="task-due-date">Tomorrow</span>
+              <span class="material-icons notif-indicator">
+                notifications_active
+              </span>
+              <span class="material-icons recurring-indicator">cached</span>
+              <span class="material-icons description-indicator">notes</span>
+            </div>
+            <button class="task-more">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </a>
+        </div>
+        <ul class="subtasks"></ul>
+      </li>
+      <!-- Task -->
+      <li class="task">
+        <div class="task-preview">
+          <span class="material-icons task-drag-handle"> drag_handle </span>
+          <input type="checkbox" class="task-check" />
+          <input type="text" class="task-name" value="Create Footer" />
+          <a class="details-link" href="../task-details">
+            <div class="chip task-data">
+              <span class="task-due-date">Tomorrow</span>
+              <span class="material-icons notif-indicator">
+                notifications_active
+              </span>
+              <span class="material-icons recurring-indicator">cached</span>
+              <span class="material-icons description-indicator">notes</span>
+            </div>
+            <button class="task-more">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </a>
+        </div>
+        <ul class="subtasks">
+          <!-- Task -->
+          <li class="task">
+            <div class="task-preview">
+              <span class="material-icons task-drag-handle">
+                drag_handle
+              </span>
+              <input type="checkbox" class="task-check" />
+              <input type="text" class="task-name" value="Add GH link" />
+              <a class="details-link" href="../task-details">
+                <div class="chip task-data">
+                  <span class="task-due-date">Tomorrow</span>
+                  <span class="material-icons notif-indicator">
+                    notifications_active
+                  </span>
+                  <span class="material-icons recurring-indicator">cached</span>
+                  <span class="material-icons description-indicator">notes</span>
+                </div>
+                <button class="task-more">
+                  <i class="material-icons">more_vert</i>
+                </button>
+              </a>
+            </div>
+            <ul class="subtasks"></ul>
+          </li>
+        </ul>
+      </li>
+      <!-- Task -->
+      <li class="task">
+        <div class="task-preview">
+          <span class="material-icons task-drag-handle"> drag_handle </span>
+          <input type="checkbox" class="task-check" />
+          <input type="text" class="task-name" value="Look how far I can nest!" />
+          <a class="details-link" href="../task-details">
+            <div class="chip task-data">
+              <span class="material-icons notif-indicator">
+                notifications_active
+              </span>
+              <span class="task-due-date">Tomorrow</span>
+              <span class="material-icons recurring-indicator">cached</span>
+              <span class="material-icons description-indicator">notes</span>
+            </div>
+            <button class="task-more">
+              <i class="material-icons">more_vert</i>
+            </button>
+          </a>
+        </div>
+        <ul class="subtasks">
+          <li class="task">
+            <div class="task-preview">
+              <span class="material-icons task-drag-handle">
+                drag_handle
+              </span>
+              <input type="checkbox" class="task-check" />
+              <input type="text" class="task-name" value="2" />
+              <a class="details-link" href="../task-details">
+                <div class="chip task-data">
+                  <span class="material-icons notif-indicator">
+                    notifications_active
+                  </span>
+                  <span class="task-due-date">Tomorrow</span>
+                  <span class="material-icons recurring-indicator">cached</span>
+                  <span class="material-icons description-indicator">notes</span>
+                </div>
+                <button class="task-more">
+                  <i class="material-icons">more_vert</i>
+                </button>
+              </a>
+            </div>
+            <ul class="subtasks">
+              <li class="task has-description">
+                <div class="task-preview">
+                  <span class="material-icons task-drag-handle">
+                    drag_handle
+                  </span>
+                  <input type="checkbox" class="task-check" />
+                  <input type="text" class="task-name" value="3" />
+                  <a class="details-link" href="../task-details">
+                    <div class="chip task-data">
+                      <span class="material-icons notif-indicator">
+                        notifications_active
+                      </span>
+                      <span class="task-due-date">Tomorrow</span>
+                      <span class="material-icons recurring-indicator">cached</span>
+                      <span class="material-icons description-indicator">notes</span>
+                    </div>
+                    <button class="task-more">
+                      <i class="material-icons">more_vert</i>
+                    </button>
+                  </a>
+                </div>
+                <ul class="subtasks">
+                  <li class="task">
+                    <div class="task-preview">
+                      <span class="material-icons task-drag-handle">
+                        drag_handle
+                      </span>
+                      <input type="checkbox" class="task-check" />
+                      <input type="text" class="task-name" value="4" />
+                      <a class="details-link" href="../task-details">
+                        <div class="chip task-data">
+                          <span class="material-icons notif-indicator">
+                            notifications_active
+                          </span>
+                          <span class="task-due-date">Tomorrow</span>
+                          <span class="material-icons recurring-indicator">cached</span>
+                          <span class="material-icons description-indicator">notes</span>
+                        </div>
+                        <button class="task-more">
+                          <i class="material-icons">more_vert</i>
+                        </button>
+                      </a>
+                    </div>
+                    <ul class="subtasks">
+                      <li class="task">
+                        <div class="task-preview">
+                          <span class="material-icons task-drag-handle">
+                            drag_handle
+                          </span>
+                          <input type="checkbox" class="task-check" />
+                          <input type="text" class="task-name" value="5" />
+                          <a class="details-link" href="../task-details">
+                            <div class="chip task-data">
+                              <span class="material-icons notif-indicator">
+                                notifications_active
+                              </span>
+                              <span class="task-due-date">Tomorrow</span>
+                              <span class="material-icons recurring-indicator">cached</span>
+                              <span class="material-icons description-indicator">notes</span>
+                            </div>
+                            <button class="task-more">
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                          </a>
+                        </div>
+                        <ul class="subtasks"></ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+</body>
+
 </html>
