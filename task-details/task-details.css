@@ -43,6 +43,7 @@ main header .task-preview {
 
 .task-date-info .task-due-date {
   border-bottom: 2px solid white;
+  font-family: inherit;
 }
 
 .task-date-info .task-due-date:focus {
