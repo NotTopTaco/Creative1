@@ -1,0 +1,182 @@
+main header .task-preview {
+  padding: 0;
+}
+
+main header .back-button {
+  color: inherit;
+  text-decoration: none;
+}
+
+.task-details {
+  /* display */
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1em;
+  /* positioning */
+  /* box-model */
+  padding: 1em;
+
+  /* typography */
+  /* manipulation */
+  /* misc */
+}
+
+.task-details fieldset {
+  padding: 0;
+  border: 0;
+}
+
+.task-details legend {
+  color: var(--theme-color);
+  margin-bottom: 0.25em;
+}
+
+.task-details .task-date-info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.task-date-info .task-due-date,
+.task-date-info .button {
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.task-date-info .task-due-date {
+  border-bottom: 2px solid white;
+  font-family: inherit;
+}
+
+.task-date-info .task-due-date:focus {
+  background: #444;
+  outline: none;
+  border-bottom: 2px solid var(--theme-color);
+}
+
+.task-date-info .button-wrapper {
+  display: flex;
+  gap: inherit;
+}
+
+.task-date-info .button {
+  font-size: 1em;
+  border: 2px solid white;
+  padding: 0.25em 0.5em;
+  border-radius: 2em;
+}
+
+.task-date-info .button .material-icons {
+  vertical-align: middle;
+  font-size: inherit;
+}
+
+.task-description textarea {
+  /* display */
+  /* positioning */
+  /* box-model */
+  background: #888;
+  border: 2px solid white;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  width: 100%;
+  min-height: fit-content;
+  height: 5em;
+  max-height: 400px;
+
+  /* typography */
+  font-size: 0.75em;
+  font-family: inherit;
+  color: inherit;
+
+  /* manipulation */
+  /* misc */
+}
+
+.task-description textarea:focus {
+  background: #444;
+  outline: none;
+  border: 2px solid var(--theme-color);
+}
+
+.task-description textarea::placeholder {
+  color: #444;
+}
+
+.task-details .attachments-fieldset {
+  overflow-x: clip;
+  min-width: unset;
+}
+
+.attachments-fieldset .attachments {
+  /* display */
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+
+  /* positioning */
+  overflow-x: scroll;
+
+  /* box-model */
+  background: #888;
+  border: 2px solid white;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 1em;
+
+  /* typography */
+  /* manipulation */
+  /* misc */
+}
+
+.attachments .attachment {
+  /* display */
+  flex: 0 0 150px;
+
+  /* positioning */
+  position: relative;
+
+  /* box-model */
+  background: white;
+  border-radius: 1em;
+  max-width: 80vh;
+  border: 2px solid #666;
+  overflow: hidden;
+
+  /* typography */
+  color: #666;
+
+  /* manipulation */
+  /* misc */
+}
+
+.attachment img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.attachment .card-text {
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 0.75em;
+}
+
+.attachment input {
+  display: none;
+}
+
+.new.attachment {
+  display: flex;
+  flex: 0 0 auto;
+  width: min-content;
+  flex-flow: column nowrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
